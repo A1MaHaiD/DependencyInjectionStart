@@ -1,4 +1,6 @@
 package com.handroid.dependencyinjectionstart.example_1
 
-class Monitor {
+import javax.inject.Inject
+
+class Monitor @Inject constructor() {
 }

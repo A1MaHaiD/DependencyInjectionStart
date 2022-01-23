@@ -1,11 +1,23 @@
 package com.handroid.dependencyinjectionstart.example_1
 
+import javax.inject.Inject
+
 class Activity {
 
-   lateinit var computer:Computer
-   lateinit var keyboard: Keyboard
+/*    val component = DaggerNewComponent.create()
+    val keyboard: Keyboard = component.getKeyboard()
+    private val monitor: Monitor = component.getMonitor()
+    private val mouse: Mouse = component.getMouse()*/
 
-   init {
-       Component().inject(this)
-   }
+    @Inject
+    lateinit var keyboard: Keyboard
+    @Inject
+    lateinit var monitor: Monitor
+    @Inject
+    lateinit var mouse: Mouse
+
+    init {
+        DaggerNewComponent.create().inject(this)
+    }
+
 }
