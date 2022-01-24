@@ -15,11 +15,11 @@ class Activity {
         lateinit var monitor: Monitor
         @Inject
         lateinit var mouse: Mouse*/
-    @Inject
+/*    @Inject
     lateinit var computer: Computer
 
     init {
         DaggerNewComponent.create().inject(this)
-    }
+    }*/
 
 }

@@ -3,7 +3,7 @@ package com.handroid.dependencyinjectionstart.example_1
 import dagger.Module
 import dagger.Provides
 
-@Module
+/*@Module
 class ComputerModule {
 
     @Provides
@@ -54,4 +54,4 @@ class ComputerModule {
     ): Computer {
         return Computer(monitor, mouse, keyboard, computerTower)
     }
-}
+}*/

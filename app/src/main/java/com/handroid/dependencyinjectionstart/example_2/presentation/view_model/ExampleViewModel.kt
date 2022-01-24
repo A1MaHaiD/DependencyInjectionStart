@@ -1,9 +1,13 @@
 package com.handroid.dependencyinjectionstart.example_2.presentation.view_model
 
-import androidx.lifecycle.ViewModel
+import com.handroid.dependencyinjectionstart.example_2.domain.ExampleUseCase
+import javax.inject.Inject
 
-class ExampleViewModel : ViewModel() {
-    override fun onCleared() {
-        super.onCleared()
+class ExampleViewModel @Inject constructor(
+    private val useCase: ExampleUseCase
+) {
+
+    fun method() {
+        useCase
     }
 }
