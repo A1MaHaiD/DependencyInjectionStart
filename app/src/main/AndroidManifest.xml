@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DependencyInjectionStart">
         <activity
-            android:name=".example_2.presentation.ui.MainActivity"
+            android:name="com.handroid.dependencyinjectionstart.presentation.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
